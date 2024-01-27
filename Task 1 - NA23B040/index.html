@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <title>Joke Teller</title>
+    </head>
+
+
+    <body>
+        <header id="heading">
+            <h1 id="topic">Joke Teller by Chandran</h1>
+        </header>
+        <!--
+            A container to hold all the card containers. Created as this would
+            make the spacing between the header and the cards much easier to 
+            implement.
+        -->
+        <div class="container" id="holder">
+            <!--
+                Only the initial card is created here. The rest of them are 
+                duplicated in the JS code.
+            -->
+            <div class="container" id="full_card">
+                <div class="card">
+                    <div class="front">
+                        <!--
+                            Text (the jokes) will be inserted in the JS code.
+                        -->
+                        <h1 id="setup">
+                            Front of card
+                        </h1>
+                        <p id="type">
+                            Additional info on the front of the card
+                        </p>
+                    </div>
+                    <div class="back">
+                        <h1 id="punchline">
+                            Back of card
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
