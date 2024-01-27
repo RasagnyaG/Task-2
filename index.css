@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color:  #F5F5F5;
+}
+
+.cardcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 15px auto;
+    position: relative;
+    height: 200px;
+    width: 300px;
+    transform-style: preserve-3d;  /* to get the 3d effect */
+    transition: 0.5s ease-out ;;
+}
+
+.front, .back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.oddfront{
+    background-color: #ADD8E6 ;
+}
+.evenfront{
+    background-color:  #90EE90 ;
+}
+
+.oddback{
+    transform: rotateY(180deg);
+    backface-visibility: hidden; /* To hide backside of the card */
+    background-color:  #FF8C00 ;
+}
+
+.evenback{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #800080;
+}
+
+.card:hover{
+    transform:  rotateY(180deg);
+}
+
